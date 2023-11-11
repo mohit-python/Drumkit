@@ -6,7 +6,7 @@ for(var i=0;i<n;i++)
         var buttoninnerhtml = this.innerHTML;
         makesound(buttoninnerhtml);
     });
-    document.addEventListener("keypress",function(event)
+    document.addEventListener("keydown",function(event)
     {
         makesound(event.key);
     });
