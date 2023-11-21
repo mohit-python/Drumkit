@@ -5,12 +5,12 @@ for(var i=0;i<n;i++)
     {
         var buttoninnerhtml = this.innerHTML;
         makesound(buttoninnerhtml);
-        makeanimation(buttoninnerhtml);
+        animation(buttoninnerhtml);
     });
     document.addEventListener("keydown",function(event)
     {
         makesound(event.key);
-        makeanimation(event.key);
+        animation(event.key);
     });
     function makesound(key)
     {
@@ -48,7 +48,7 @@ for(var i=0;i<n;i++)
 
         }
     }
-    function makeanimation(currentkey)
+    function animation(currentkey)
     {
         var s = document.querySelector("."+currentkey);
         s.classList.add("pressed");
